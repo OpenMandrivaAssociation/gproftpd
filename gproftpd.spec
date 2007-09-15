@@ -46,12 +46,12 @@ install -m0644 %{name}.pam %{buildroot}%{_sysconfdir}/pam.d/%{name}
 # locales
 %find_lang %name
 
-# Mandrake Icons
+# Mandriva Icons
 install -D -m644 pixmaps/%{name}32.png %{buildroot}%{_iconsdir}/%{name}.png
 install -D -m644 pixmaps/%{name}16.png %{buildroot}%{_miconsdir}/%{name}.png
 install -D -m644 pixmaps/%{name}48.png %{buildroot}%{_liconsdir}/%{name}.png
 
-# Mandrake Menus
+# Mandriva Menus
 install -d %{buildroot}/%{_menudir}
 cat > %{buildroot}%{_menudir}/%{name} <<EOF
 ?package(%{name}): \
