@@ -67,8 +67,8 @@ EOF
 install -d -m 755 %{buildroot}%{_datadir}/applications
 cat >  %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
-Name=%{title}
-Comment=%{longtitle}
+Name=GProftpd
+Comment=Proftpd administration tool
 Exec=%{_sbindir}/%{name}
 Icon=%{name}
 Terminal=false
