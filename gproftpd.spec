@@ -11,6 +11,7 @@ Source2:	%{name}.pam.bz2
 Requires:	proftpd >= 1.2.8
 Requires:	usermode-consoleonly
 BuildRequires:	gtk+2-devel
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 GProftpd is a fast and easy to use GNOME2 administration tool for
