@@ -52,17 +52,6 @@ install -D -m644 pixmaps/%{name}16.png %{buildroot}%{_miconsdir}/%{name}.png
 install -D -m644 pixmaps/%{name}48.png %{buildroot}%{_liconsdir}/%{name}.png
 
 # Mandriva Menus
-install -d %{buildroot}/%{_menudir}
-cat > %{buildroot}%{_menudir}/%{name} <<EOF
-?package(%{name}): \
- command="%{_sbindir}/%{name}" \
- title="GProftpd" \
- longtitle="Proftpd administration tool" \
- needs="x11" \
- icon="%{name}.png" \
- section="System/Configuration/Networking" \
- xdg="true" 
-EOF
 
 install -d -m 755 %{buildroot}%{_datadir}/applications
 cat >  %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -108,7 +97,6 @@ rm -rf %{buildroot}
 %{_sbindir}/%{name}.real
 %{_sbindir}/gprostats
 %{_datadir}/pixmaps/*
-%{_menudir}/%{name}
 %{_iconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
