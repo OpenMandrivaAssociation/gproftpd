@@ -1,7 +1,7 @@
 Summary:	GNOME GUI Tool for Proftpd Server Configuration
 Name:		gproftpd
 Version:	8.3.2
-Release:	%mkrel 4
+Release:	%mkrel 5
 Group:		System/Configuration/Networking
 License:	GPL
 URL:		http://www.gadmintools.org/
