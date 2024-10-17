@@ -4,7 +4,7 @@ Version:	8.3.2
 Release:	%mkrel 5
 Group:		System/Configuration/Networking
 License:	GPL
-URL:		http://www.gadmintools.org/
+URL:		https://www.gadmintools.org/
 Source0:	http://mange.dynup.net/linux/gproftpd/%{name}-%{version}.tar.bz2
 Source1:	%{name}.pam-0.77.bz2
 Source2:	%{name}.pam.bz2
